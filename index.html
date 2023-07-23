@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Monthly Book Recommendations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="logo">
+        <img src="images/booklite logo.svg" alt="Logo" />
+      </div>
+      <div class="top-nav-cta-container">
+        <a class="button cta-link">Explore books</a>
+        <a href="#join-community" class="button cta-primary">Join the community</a>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div class="header">
+        <h1>Your book recommendations for August</h1>
+        <p class="header-description">
+          Every month our <span class="highlight">24 000 members</span> share non-fiction books that they’re enjoying
+          reading. <br />
+          Top 10 most popular are shown here.
+        </p>
+      </div>
+      <div class="book-collection">
+        <div class="book-item" onclick="showBookDetail(1)">
+          <img src="https://m.media-amazon.com/images/I/819JSdLa3OL._AC_UF1000,1000_QL80_.jpg" alt="Creativity Inc." />
+          <div class="book-info">
+            <p class="book-item-title">Creativity Inc.</p>
+            <p class="book-item-author">Ed Catmull, Amy Wallace</p>
+            <div class="book-item-tags"><span>Business</span><span>Design</span><span>Management</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(2)">
+          <img src="https://m.media-amazon.com/images/I/91uP8nzn7TL._AC_UF894,1000_QL80_.jpg" alt="Working Backwards" />
+          <div class="book-info">
+            <p class="book-item-title">Working Backwards</p>
+            <p class="book-item-author">Colin Bryar, Bill Carr</p>
+            <div class="book-item-tags"><span>Business</span><span>Leadership</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(3)">
+          <img
+            src="https://m.media-amazon.com/images/I/51WS36aA2BL._AC_UF1000,1000_QL80_.jpg"
+            alt="Don't Make Me Think"
+          />
+          <div class="book-info">
+            <p class="book-item-title">Don't Make Me Think</p>
+            <p class="book-item-author">Steve Krug</p>
+            <div class="book-item-tags"><span>Design</span><span>Usability</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(4)">
+          <img src="https://m.media-amazon.com/images/I/818KHQZAl0L._AC_UF1000,1000_QL80_.jpg" alt="Made To Stick" />
+          <div class="book-info">
+            <p class="book-item-title">Made To Stick</p>
+            <p class="book-item-author">Chip Heath, Dan Heath</p>
+            <div class="book-item-tags"><span>Business</span><span>Psychology</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(5)">
+          <img src="https://m.media-amazon.com/images/I/81fcWvYdukL._AC_UF1000,1000_QL80_.jpg" alt="Hooked" />
+          <div class="book-info">
+            <p class="book-item-title">Hooked</p>
+            <p class="book-item-author">Nir Eyal, Ryan Hoover</p>
+            <div class="book-item-tags"><span>Business</span><span>Psychology</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(6)">
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/I/71y2wZgkJ6L._AC_UL600_SR600,600_.jpg"
+            alt="Sprint"
+          />
+          <div class="book-info">
+            <p class="book-item-title">Sprint</p>
+            <p class="book-item-author">Jake Knapp, John Zeratsky</p>
+            <div class="book-item-tags"><span>Business</span><span>Design</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(7)">
+          <img src="https://m.media-amazon.com/images/I/71oKgphAjyL._AC_UF894,1000_QL80_.jpg" alt="Remote" />
+          <div class="book-info">
+            <p class="book-item-title">Remote</p>
+            <p class="book-item-author">Jason Fried, Hansson Heinemeier</p>
+            <div class="book-item-tags"><span>Business</span><span>Management</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(8)">
+          <img
+            src="https://m.media-amazon.com/images/I/816C08X4elL._AC_UF1000,1000_QL80_.jpg"
+            alt="Creative Confidence"
+          />
+          <div class="book-info">
+            <p class="book-item-title">Creative Confidence</p>
+            <p class="book-item-author">Tom Kelley, David Kelley</p>
+            <div class="book-item-tags"><span>Design</span><span>Creativity</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(9)">
+          <img src="https://danielkarim.com/wp-content/uploads/mindset-600x932.jpg" alt="Mindset" />
+          <div class="book-info">
+            <p class="book-item-title">Mindset</p>
+            <p class="book-item-author">Dr Carol S. Dweck</p>
+            <div class="book-item-tags"><span>Psychology</span><span>Sociology</span></div>
+          </div>
+        </div>
+        <div class="book-item" onclick="showBookDetail(10)">
+          <img src="https://m.media-amazon.com/images/I/81OkY67wJLL._AC_UF1000,1000_QL80_.jpg" alt="Nudge" />
+          <div class="book-info">
+            <p class="book-item-title">Nudge</p>
+            <p class="book-item-author">Richard Thaler, Cass Sunstein</p>
+            <div class="book-item-tags"><span>Psychology</span><span>Sociology</span></div>
+          </div>
+        </div>
+        <div class="book-item promo-item">
+          <p class="promo-title">Explore recommendations for July <span class="arrow"></span></p>
+          <div class="preview-books"></div>
+        </div>
+      </div>
+    </div>
+    <footer id="join-community" class="footer">
+      <div class="footer-content">
+        <h2>Join the community of curious learners</h2>
+        <p class="footer-description">
+          We’re a community of non-fiction book readers within the tech industry. <br />
+          Join 24 000 members!
+        </p>
+        <div class="email-input-container">
+          <input type="email" placeholder="Your best email" />
+          <button type="submit" class="email-button cta-primary">Join</button>
+        </div>
+        <span class="input-caption"
+          >You’ll be subscribed to emails with book recommendations<br />and get an invite to our Discord.</span
+        >
+      </div>
+      <div class="separator"></div>
+      <div class="copyrights">© 2023 Volodymyr Melnyk</div>
+    </footer>
+
+    <!-- Add the overlay element -->
+    <div id="overlay"></div>
+    <div id="bookDetailDialog" class="book-detail-dialog">
+      <div class="book-detail-content">
+        <div class="close-button" onclick="closeBookDetail()"><span class="close-icon"></span></div>
+        <div class="book-detail-main-area-wrapper">
+          <div class="book-detail-main-area">
+            <div class="book-detail-main-area-summary">
+              <div class="book-detail-cover"><img id="detailBookImage" src="" alt="Book Cover" /></div>
+              <div id="detailBookInfo" class="book-detail-headline-container">
+                <h3 id="detailBookTitle">Book Title</h3>
+                <p id="detailBookDescription">Book Description</p>
+                <div class="book-item-tags"><span>Business</span><span>Design</span><span>Management</span></div>
+                <div class="rating">
+                  <div class="star full"></div>
+                  <div class="star full"></div>
+                  <div class="star full"></div>
+                  <div class="star full"></div>
+                  <div class="star half"></div>
+                  <div class="rating-text">4.6 on Amazon</div>
+                </div>
+                <div class="detail-ctas">
+                  <a href="" class="button cta-primary">Buy on Amazon</a>
+                  <a href="" class="button cta-secondary">Discuss in community</a>
+                </div>
+              </div>
+            </div>
+            <div class="book-detail-main-area-description">
+              From Ed Catmull, co-founder (with Steve Jobs and John Lasseter) of Pixar Animation Studios, comes an
+              incisive book about creativity in business—sure to appeal to readers of Daniel Pink, Tom Peters, and Chip
+              and Dan Heath. Creativity, Inc. is a book for managers who want to lead their employees to new heights, a
+              manual for anyone who strives for originality, and the first-ever, all-access trip into the nerve center
+              of Pixar Animation — into the meetings, postmortems, and “Braintrust” sessions where some of the most
+              successful films in history are made.
+              <br />
+              <br />
+              It is, at heart, a book about how to build a creative culture—but it is also, as Pixar co-founder and
+              president Ed Catmull writes, “an expression of the ideas that I believe make the best in us possible.” For
+              nearly twenty years, Pixar has dominated the world of animation, producing such beloved films as the Toy
+              Story trilogy, Monsters, Inc., Finding Nemo, The Incredibles, Up, and WALL-E, which have gone on to set
+              box-office records and garner thirty Academy Awards. The joyousness of the storytelling, the inventive
+              plots, the emotional authenticity: In some ways, Pixar movies are an object lesson in what creativity
+              really is.
+            </div>
+          </div>
+          <div class="testimonials">
+            <p class="testimonials-headline">What our community members say:</p>
+            <div class="testimonial-item">
+              <div class="text">
+                “Creativity Inc. has been a game-changer for me! As an aspiring entrepreneur, this book provided
+                invaluable insights into fostering a creative and innovative company culture. Ed Catmull's storytelling
+                captivated me, and his practical advice on leadership and problem-solving has helped me transform my own
+                startup.”
+              </div>
+              <div class="author">Lina Manson</div>
+            </div>
+            <div class="testimonial-item">
+              <div class="text">
+                “A masterpiece of creativity and management! Creativity Inc. is a must-read for leaders and managers who
+                strive to build an innovative and forward-thinking company culture. Ed Catmull's profound understanding
+                of the human psyche and creative processes shines through in every chapter.”
+              </div>
+              <div class="author">Leonid K.</div>
+            </div>
+            <div class="testimonial-item">
+              <div class="text">
+                “This book beautifully weaves together the magic of Pixar's success with real-world leadership
+                principles. Ed Catmull's openness about the challenges they faced and the lessons they learned make this
+                an incredibly relatable and inspiring read.”
+              </div>
+              <div class="author">Mary J.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
